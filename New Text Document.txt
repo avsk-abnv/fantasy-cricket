@@ -1,0 +1,8 @@
+import sys
+from cx_Freeze import setup, Executable
+
+setup(
+    name = "Fantasy Cricket",
+    version = "2.0",
+    description = "Play the game",
+    executables = [Executable("fantasy_cricket.py", base = "Win32GUI")])
